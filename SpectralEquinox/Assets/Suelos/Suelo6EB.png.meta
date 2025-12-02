@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 6ec51f5e83347cf4bab6e0e53e0869e0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6751184516079582668
+    second: Suelo6EB_0
+  - first:
+      213: -2523795127363275680
+    second: Suelo6EB_1
+  - first:
+      213: -2460135294498711278
+    second: Suelo6EB_2
+  - first:
+      213: 3845453424550772677
+    second: Suelo6EB_3
+  - first:
+      213: 5540634481462756474
+    second: Suelo6EB_4
+  - first:
+      213: 8242567140838152463
+    second: Suelo6EB_5
+  - first:
+      213: -3085114211543926602
+    second: Suelo6EB_6
+  - first:
+      213: 3435355721575554253
+    second: Suelo6EB_7
+  - first:
+      213: 4298806657598560506
+    second: Suelo6EB_8
+  - first:
+      213: 7628673030506227982
+    second: Suelo6EB_9
+  - first:
+      213: 3345650665219978453
+    second: Suelo6EB_10
+  - first:
+      213: 7317754127960088558
+    second: Suelo6EB_11
+  - first:
+      213: -8983618314683279342
+    second: Suelo6EB_12
+  - first:
+      213: 2591302484918353381
+    second: Suelo6EB_13
+  - first:
+      213: -7448723780752071338
+    second: Suelo6EB_14
+  - first:
+      213: 6180728969039186686
+    second: Suelo6EB_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Suelo6EB_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1659
+        width: 390
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccd7a0e4c8601bd50800000000000000
+      internalID: 6751184516079582668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_1
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1788
+        width: 262
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06476ab04bda9fcd0800000000000000
+      internalID: -2523795127363275680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_2
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 1788
+        width: 135
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219d008ebf7dbddd0800000000000000
+      internalID: -2460135294498711278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_3
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 1916
+        width: 251
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf78aaf38bcd5530800000000000000
+      internalID: 3845453424550772677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_4
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 1788
+        width: 259
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a744ed194b944ec40800000000000000
+      internalID: 5540634481462756474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_5
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 1671
+        width: 106
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0917f2c42b736270800000000000000
+      internalID: 8242567140838152463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_6
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 1671
+        width: 107
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b83a6168f87f25d0800000000000000
+      internalID: -3085114211543926602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1150
+        width: 389
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dccdd95d3d5dcaf20800000000000000
+      internalID: 3435355721575554253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_8
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 0
+        width: 1540
+        height: 1668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af81f3801ed68ab30800000000000000
+      internalID: 4298806657598560506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_9
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1030
+        width: 109
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e092deae3bd7ed960800000000000000
+      internalID: 7628673030506227982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_10
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1030
+        width: 108
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d47cf2dd832e6e20800000000000000
+      internalID: 3345650665219978453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 636
+        width: 136
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef95b6bb92ed8560800000000000000
+      internalID: 7317754127960088558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_12
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 892
+        width: 136
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2181c937db6c35380800000000000000
+      internalID: -8983618314683279342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_13
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 518
+        width: 108
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ed352771e726f320800000000000000
+      internalID: 2591302484918353381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 380
+        width: 390
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655a44abf21d0a890800000000000000
+      internalID: -7448723780752071338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo6EB_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 125
+        width: 390
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa0c8c104c56c550800000000000000
+      internalID: 6180728969039186686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Suelo6EB_0: 6751184516079582668
+      Suelo6EB_1: -2523795127363275680
+      Suelo6EB_10: 3345650665219978453
+      Suelo6EB_11: 7317754127960088558
+      Suelo6EB_12: -8983618314683279342
+      Suelo6EB_13: 2591302484918353381
+      Suelo6EB_14: -7448723780752071338
+      Suelo6EB_15: 6180728969039186686
+      Suelo6EB_2: -2460135294498711278
+      Suelo6EB_3: 3845453424550772677
+      Suelo6EB_4: 5540634481462756474
+      Suelo6EB_5: 8242567140838152463
+      Suelo6EB_6: -3085114211543926602
+      Suelo6EB_7: 3435355721575554253
+      Suelo6EB_8: 4298806657598560506
+      Suelo6EB_9: 7628673030506227982
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
