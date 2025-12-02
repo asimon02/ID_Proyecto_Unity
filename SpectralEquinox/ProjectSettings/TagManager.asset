@@ -3,17 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 3
-  tags:
-  - Floor
-  - Coin
-  - Death
-  - Player1
-  - Player2
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
   - Floor
+  - Coin
+  - Death
   - Water
   - UI
   - Player1
