@@ -49,9 +49,9 @@ public class Player2 : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        audioSource.PlayOneShot(fuegoFatuoClip);
 
         if(collision.transform.CompareTag("Coin")) {
+            audioSource.PlayOneShot(fuegoFatuoClip);
             Destroy(collision.gameObject);
             fuegosFatuos++;
             textFuegoFatuo.text = fuegosFatuos.ToString();

@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Player : MonoBehaviour {
+public class Player1 : MonoBehaviour {
     public float speed = 3f;
     private Rigidbody2D rb2D;
     private float move;
@@ -49,9 +49,9 @@ public class Player : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        audioSource.PlayOneShot(fuegoFatuoClip);
 
         if(collision.transform.CompareTag("Coin")) {
+            audioSource.PlayOneShot(fuegoFatuoClip);
             Destroy(collision.gameObject);
             fuegosFatuos++;
             textFuegoFatuo.text = fuegosFatuos.ToString();
