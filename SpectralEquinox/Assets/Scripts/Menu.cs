@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class MenuTransitions : MonoBehaviour
 {
@@ -29,6 +31,13 @@ public class MenuTransitions : MonoBehaviour
         optionsMenu.gameObject.SetActive(false);
         creditsMenu.gameObject.SetActive(false);
     }
+
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Selector");
+    }
+
 
     public void OpenOptions()
     {
