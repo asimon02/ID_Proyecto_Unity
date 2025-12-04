@@ -1,0 +1,1053 @@
+fileFormatVersion: 2
+guid: d843aa7a8f189ec4e9405334e48cfb1e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2007114172777830753
+    second: sprite-256px-16-angel-caer_0
+  - first:
+      213: -8731083538561712046
+    second: sprite-256px-16-angel-caer_1
+  - first:
+      213: -5455904231797005163
+    second: sprite-256px-16-angel-caer_2
+  - first:
+      213: -4311824759812647961
+    second: sprite-256px-16-angel-caer_3
+  - first:
+      213: -8560315469638018634
+    second: sprite-256px-16-angel-caer_4
+  - first:
+      213: -646737170426042689
+    second: sprite-256px-16-angel-caer_5
+  - first:
+      213: -1811942200650664734
+    second: sprite-256px-16-angel-caer_6
+  - first:
+      213: 3998171617712229391
+    second: sprite-256px-16-angel-caer_7
+  - first:
+      213: -6196101653854716313
+    second: sprite-256px-16-angel-caer_8
+  - first:
+      213: -4720491252320136163
+    second: sprite-256px-16-angel-caer_9
+  - first:
+      213: -4701721282791094456
+    second: sprite-256px-16-angel-caer_10
+  - first:
+      213: -3317021365615493951
+    second: sprite-256px-16-angel-caer_11
+  - first:
+      213: 899884780551020428
+    second: sprite-256px-16-angel-caer_12
+  - first:
+      213: -4602819429762188550
+    second: sprite-256px-16-angel-caer_13
+  - first:
+      213: -3055089410331440578
+    second: sprite-256px-16-angel-caer_14
+  - first:
+      213: 8258735699693279344
+    second: sprite-256px-16-angel-caer_15
+  - first:
+      213: 4633127961815861361
+    second: sprite-256px-16-angel-caer_16
+  - first:
+      213: 7630230323866226730
+    second: sprite-256px-16-angel-caer_17
+  - first:
+      213: 5398675259935571812
+    second: sprite-256px-16-angel-caer_18
+  - first:
+      213: 6648344686291601065
+    second: sprite-256px-16-angel-caer_19
+  - first:
+      213: 3702016948443981474
+    second: sprite-256px-16-angel-caer_20
+  - first:
+      213: -2524509520995185347
+    second: sprite-256px-16-angel-caer_21
+  - first:
+      213: 7801330157154512625
+    second: sprite-256px-16-angel-caer_22
+  - first:
+      213: 5663075015208807168
+    second: sprite-256px-16-angel-caer_23
+  - first:
+      213: 4453940793279948794
+    second: sprite-256px-16-angel-caer_24
+  - first:
+      213: 4482959809836139304
+    second: sprite-256px-16-angel-caer_25
+  - first:
+      213: 4152819589639626263
+    second: sprite-256px-16-angel-caer_26
+  - first:
+      213: -9205697566804545892
+    second: sprite-256px-16-angel-caer_27
+  - first:
+      213: 8543355994551370841
+    second: sprite-256px-16-angel-caer_28
+  - first:
+      213: 8400400655390724353
+    second: sprite-256px-16-angel-caer_29
+  - first:
+      213: 3454757738211050503
+    second: sprite-256px-16-angel-caer_30
+  - first:
+      213: 3829467016481256298
+    second: sprite-256px-16-angel-caer_31
+  - first:
+      213: 4987992466398436595
+    second: sprite-256px-16-angel-caer_32
+  - first:
+      213: -685966551827076034
+    second: sprite-256px-16-angel-caer_33
+  - first:
+      213: 4919990773733739082
+    second: sprite-256px-16-angel-caer_34
+  - first:
+      213: -1936229307234100407
+    second: sprite-256px-16-angel-caer_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_0
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1826
+        width: 195
+        height: 263
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169131cb4b3badb10800000000000000
+      internalID: 2007114172777830753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_1
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1827
+        width: 193
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250c4cbe7c5f4d680800000000000000
+      internalID: -8731083538561712046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_2
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 1827
+        width: 189
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 594603ff10cb844b0800000000000000
+      internalID: -5455904231797005163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_3
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 1827
+        width: 183
+        height: 277
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e312a9d9325924c0800000000000000
+      internalID: -4311824759812647961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_4
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 1829
+        width: 176
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b9d1f25f66a33980800000000000000
+      internalID: -8560315469638018634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_5
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 1833
+        width: 165
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb6e6b558f35607f0800000000000000
+      internalID: -646737170426042689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_6
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1477
+        width: 165
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e47da82b20bad6e0800000000000000
+      internalID: -1811942200650664734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_7
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1481
+        width: 160
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0c49c037eb5c7730800000000000000
+      internalID: 3998171617712229391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_8
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1481
+        width: 160
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76e77c9cf56030aa0800000000000000
+      internalID: -6196101653854716313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_9
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1486
+        width: 166
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d149e1c57327d7eb0800000000000000
+      internalID: -4720491252320136163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_10
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 1489
+        width: 171
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 847c752776120ceb0800000000000000
+      internalID: -4701721282791094456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_11
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1493
+        width: 182
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cc7b1e64a297f1d0800000000000000
+      internalID: -3317021365615493951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_12
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1139
+        width: 188
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8f168ba0780d7c00800000000000000
+      internalID: 899884780551020428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_13
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 1141
+        width: 202
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa32cb8d108f10c0800000000000000
+      internalID: -4602819429762188550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_14
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1142
+        width: 202
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3a032c2e542a95d0800000000000000
+      internalID: -3055089410331440578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_15
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1143
+        width: 207
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0781e0abc5cec9270800000000000000
+      internalID: 8258735699693279344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_16
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1145
+        width: 218
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 178c6fa755d2c4040800000000000000
+      internalID: 4633127961815861361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_17
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 1146
+        width: 224
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20d5788d0604e960800000000000000
+      internalID: 7630230323866226730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_18
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 790
+        width: 230
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46f3626ab82fbea40800000000000000
+      internalID: 5398675259935571812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_19
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 790
+        width: 261
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a644ca844aa34c50800000000000000
+      internalID: 6648344686291601065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_20
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 788
+        width: 263
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a6aa7cecc4306330800000000000000
+      internalID: 3702016948443981474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_21
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 788
+        width: 265
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d8df057f327fcd0800000000000000
+      internalID: -2524509520995185347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_22
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 785
+        width: 271
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1feacb8d174e34c60800000000000000
+      internalID: 7801330157154512625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_23
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 783
+        width: 272
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b29e9d8b8479e40800000000000000
+      internalID: 5663075015208807168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_24
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 423
+        width: 275
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af7a212bd839fcd30800000000000000
+      internalID: 4453940793279948794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_25
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 421
+        width: 276
+        height: 286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823c2aff13ca63e30800000000000000
+      internalID: 4482959809836139304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_26
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 416
+        width: 276
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ed0c80a67c1a930800000000000000
+      internalID: 4152819589639626263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_27
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 411
+        width: 277
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9eefec36dace3080800000000000000
+      internalID: -9205697566804545892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_28
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 409
+        width: 278
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95440fc2309109670800000000000000
+      internalID: 8543355994551370841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_29
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 402
+        width: 283
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101d58b83e7349470800000000000000
+      internalID: 8400400655390724353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 45
+        width: 284
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7040a1bdbd3c1ff20800000000000000
+      internalID: 3454757738211050503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_31
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 41
+        width: 293
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a63b07c46fff42530800000000000000
+      internalID: 3829467016481256298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_32
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 39
+        width: 296
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fcd00e78b8e83540800000000000000
+      internalID: 4987992466398436595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_33
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 39
+        width: 298
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c2c863e05fa76f0800000000000000
+      internalID: -685966551827076034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_34
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 39
+        width: 298
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a499e9a81574440800000000000000
+      internalID: 4919990773733739082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite-256px-16-angel-caer_35
+      rect:
+        serializedVersion: 2
+        x: 1479
+        y: 40
+        width: 297
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94b5c9224b12125e0800000000000000
+      internalID: -1936229307234100407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprite-256px-16-angel-caer_0: 2007114172777830753
+      sprite-256px-16-angel-caer_1: -8731083538561712046
+      sprite-256px-16-angel-caer_10: -4701721282791094456
+      sprite-256px-16-angel-caer_11: -3317021365615493951
+      sprite-256px-16-angel-caer_12: 899884780551020428
+      sprite-256px-16-angel-caer_13: -4602819429762188550
+      sprite-256px-16-angel-caer_14: -3055089410331440578
+      sprite-256px-16-angel-caer_15: 8258735699693279344
+      sprite-256px-16-angel-caer_16: 4633127961815861361
+      sprite-256px-16-angel-caer_17: 7630230323866226730
+      sprite-256px-16-angel-caer_18: 5398675259935571812
+      sprite-256px-16-angel-caer_19: 6648344686291601065
+      sprite-256px-16-angel-caer_2: -5455904231797005163
+      sprite-256px-16-angel-caer_20: 3702016948443981474
+      sprite-256px-16-angel-caer_21: -2524509520995185347
+      sprite-256px-16-angel-caer_22: 7801330157154512625
+      sprite-256px-16-angel-caer_23: 5663075015208807168
+      sprite-256px-16-angel-caer_24: 4453940793279948794
+      sprite-256px-16-angel-caer_25: 4482959809836139304
+      sprite-256px-16-angel-caer_26: 4152819589639626263
+      sprite-256px-16-angel-caer_27: -9205697566804545892
+      sprite-256px-16-angel-caer_28: 8543355994551370841
+      sprite-256px-16-angel-caer_29: 8400400655390724353
+      sprite-256px-16-angel-caer_3: -4311824759812647961
+      sprite-256px-16-angel-caer_30: 3454757738211050503
+      sprite-256px-16-angel-caer_31: 3829467016481256298
+      sprite-256px-16-angel-caer_32: 4987992466398436595
+      sprite-256px-16-angel-caer_33: -685966551827076034
+      sprite-256px-16-angel-caer_34: 4919990773733739082
+      sprite-256px-16-angel-caer_35: -1936229307234100407
+      sprite-256px-16-angel-caer_4: -8560315469638018634
+      sprite-256px-16-angel-caer_5: -646737170426042689
+      sprite-256px-16-angel-caer_6: -1811942200650664734
+      sprite-256px-16-angel-caer_7: 3998171617712229391
+      sprite-256px-16-angel-caer_8: -6196101653854716313
+      sprite-256px-16-angel-caer_9: -4720491252320136163
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
