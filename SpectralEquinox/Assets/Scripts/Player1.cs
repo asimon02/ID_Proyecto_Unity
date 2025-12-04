@@ -12,8 +12,8 @@ public class PlayerController : MonoBehaviour {
     public float groundRadius = 0.1f;
     public LayerMask groundLayer;
     private Animator animator;
-    private static int fuegosFatuos;
-    public TMP_Text textFuegoFatuo;
+    private static int fuegosActuales = 0;
+    public GameObject[] fuegoFatuosUI;
     public AudioSource audioSource;
     public AudioClip fuegoFatuoClip;
     private bool isPlayer1;
@@ -29,6 +29,20 @@ public class PlayerController : MonoBehaviour {
         } else if (gameObject.CompareTag("Player2")) {
             isPlayer1 = false;
             playerScale = 0.5f;
+        }
+        if (fuegoFatuosUI == null || fuegoFatuosUI.Length == 0)
+        {
+            GameObject container = GameObject.Find("FuegoContainer");
+            if (container != null)
+            {
+                fuegoFatuosUI = new GameObject[3];
+                for (int i = 0; i < 3; i++)
+                {
+                    fuegoFatuosUI[i] = container.transform.Find("FuegoFatuo" + (i + 1)).gameObject;
+                    fuegoFatuosUI[i].SetActive(false);
+                }
+            }
+            else Debug.LogError("No se encontró 'FuegoContainer' en la escena.");
         }
     }
 
@@ -70,14 +84,21 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if(collision.transform.CompareTag("Coin")) {
-            audioSource.PlayOneShot(fuegoFatuoClip);
+        Debug.Log("Colisión con: " + collision.name);
+
+        if (collision.CompareTag("Coin")) {
+            Debug.Log("Moneda recogida. Fuegos actuales: " + fuegosActuales);
+
             Destroy(collision.gameObject);
-            fuegosFatuos++;
-            textFuegoFatuo.text = fuegosFatuos.ToString();
+
+            if (fuegosActuales < fuegoFatuosUI.Length) {
+                Debug.Log("Activando: " + fuegoFatuosUI[fuegosActuales].name);
+                fuegoFatuosUI[fuegosActuales].SetActive(true);
+                fuegosActuales++;
+            }
         }
 
-        if(collision.transform.CompareTag("Death")) {
+        if (collision.CompareTag("Death")) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
