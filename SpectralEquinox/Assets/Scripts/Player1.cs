@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
     public AudioClip fuegoFatuoClip;
     private bool isPlayer1;
     private float playerScale;
+    private bool ghostMode = false; 
 
     void Start() {
         rb2D = GetComponent<Rigidbody2D>();
@@ -46,30 +47,50 @@ public class PlayerController : MonoBehaviour {
         }
     }
 
-    void Update() {
+   void Update() {
         move = 0;
 
         if (isPlayer1) {
             // Player1: A, W, D
             if (Input.GetKey(KeyCode.A)) move = -1;
             if (Input.GetKey(KeyCode.D)) move = 1;
-            
+
             if (Input.GetKeyDown(KeyCode.W) && isGrounded) {
                 rb2D.linearVelocity = new Vector2(rb2D.linearVelocity.x, jumpForce);
             }
+
+            // Player1 solo puede activar el modo fantasma, pero no desactivarlo
+            if (Input.GetKeyDown(KeyCode.Q) && ghostMode == false) {
+                ghostMode = true;
+                gameObject.layer = LayerMask.NameToLayer("Ghost");
+                Debug.Log("Player1 pasó a modo fantasma");
+            }
+
         } else {
-            // Player2: Flechas
+            // Player2: flechas
             if (Input.GetKey(KeyCode.LeftArrow)) move = -1;
             if (Input.GetKey(KeyCode.RightArrow)) move = 1;
-            
+
             if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded) {
                 rb2D.linearVelocity = new Vector2(rb2D.linearVelocity.x, jumpForce);
+            }
+            // Player2 puede devolver a Player1 a modo normal
+            if (Input.GetKeyDown(KeyCode.R)) {
+                GameObject p1 = GameObject.FindGameObjectWithTag("Player1");
+
+                if (p1 != null) {
+                    PlayerController pc = p1.GetComponent<PlayerController>();
+
+                    pc.ghostMode = false;
+                    p1.layer = LayerMask.NameToLayer("Player1");
+                    Debug.Log("Player2 devolvió a Player1 a modo normal");
+                }
             }
         }
 
         rb2D.linearVelocity = new Vector2(move * speed, rb2D.linearVelocity.y);
 
-        if(move != 0) {
+        if (move != 0) {
             float scaleX = Mathf.Sign(move) * playerScale;
             transform.localScale = new Vector3(scaleX, playerScale, playerScale);
         }
