@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour {
     public Transform bolaSpawnPoint; 
     public GameObject bolaDeLuzPrefab;     
     public float bolaSpeed = 10f;          
-
+    public float ghostDrainByAction = 10f;
 
     void Start() {
         rb2D = GetComponent<Rigidbody2D>();
@@ -135,7 +135,17 @@ public class PlayerController : MonoBehaviour {
                 }
 
                 Transform targetGrave = otherGraves[Random.Range(0, otherGraves.Count)];
-                transform.position = targetGrave.position;
+                
+                if (ghostSlider != null) {
+                    if (ghostSlider.value >=10f){
+                        transform.position = targetGrave.position;
+                    }
+                    ghostSlider.value -= ghostDrainByAction;
+                    if (ghostSlider.value <= 0f) {
+                        ghostSlider.value = 0f;
+                        ghostSlider.fillRect.gameObject.SetActive(false);
+                    }
+                }
                 Debug.Log("Player1 se teletransportó a: " + targetGrave.name + " en posición " + targetGrave.position);
             }
         } else {
@@ -147,7 +157,7 @@ public class PlayerController : MonoBehaviour {
                 rb2D.linearVelocity = new Vector2(rb2D.linearVelocity.x, jumpForce);
             }
             // Player2 puede devolver a Player1 a modo normal
-            if (Input.GetKeyDown(KeyCode.R)) {
+            if (Input.GetKeyDown(KeyCode.P) && ghostMode == false) {
                 GameObject p1 = GameObject.FindGameObjectWithTag("Player1");
 
                 if (p1 != null) {
@@ -156,9 +166,19 @@ public class PlayerController : MonoBehaviour {
                     Debug.Log("Player2 devolvió a Player1 a modo normal");
                 }
             }
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
-                LanzarBolaDeLuz();
+                if (ghostSlider != null) {
+                    if(ghostSlider.value >= 10f) {
+                        LanzarBolaDeLuz();
+                    }
+                    ghostSlider.value -= ghostDrainByAction;
+                    if (ghostSlider.value <= 0f)
+                    {
+                        ghostSlider.value = 0f;
+                        ghostSlider.fillRect.gameObject.SetActive(false);
+                    } 
+                }
             }
         }
 
