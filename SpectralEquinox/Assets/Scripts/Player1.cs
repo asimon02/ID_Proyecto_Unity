@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour {
@@ -21,6 +22,9 @@ public class PlayerController : MonoBehaviour {
     private bool ghostMode = false; 
     private SpriteRenderer sr;
 
+    public Slider ghostSlider;
+    public float ghostDrainRateByGhostMode = 5f;
+
     void Start() {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -33,22 +37,33 @@ public class PlayerController : MonoBehaviour {
             isPlayer1 = false;
             playerScale = 0.5f;
         }
-        if (fuegoFatuosUI == null || fuegoFatuosUI.Length == 0)
-        {
-            GameObject container = GameObject.Find("FuegoContainer");
-            if (container != null)
-            {
-                fuegoFatuosUI = new GameObject[3];
-                for (int i = 0; i < 3; i++)
-                {
-                    fuegoFatuosUI[i] = container.transform.Find("FuegoFatuo" + (i + 1)).gameObject;
+
+        Transform container = GameObject.Find("FuegoContainer")?.transform;
+
+        if (container == null) {
+            Debug.LogError("No se encontró 'FuegoContainer' en la escena");
+            return;
+        }
+
+        if (ghostSlider == null) {
+            ghostSlider = container.Find("GhostSlider")?.GetComponent<Slider>();
+            if (ghostSlider == null)
+                Debug.LogError("No se encontró 'GhostSlider' dentro de FuegoContainer");
+        }
+
+        if (fuegoFatuosUI == null || fuegoFatuosUI.Length == 0) {
+            fuegoFatuosUI = new GameObject[3];
+            for (int i = 0; i < 3; i++) {
+                Transform fuego = container.Find("FuegoFatuo" + (i + 1));
+                if (fuego != null) {
+                    fuegoFatuosUI[i] = fuego.gameObject;
                     fuegoFatuosUI[i].SetActive(false);
+                } else {
+                    Debug.LogError("No se encontró FuegoFatuo" + (i + 1));
                 }
             }
-            else Debug.LogError("No se encontró 'FuegoContainer' en la escena.");
         }
     }
-
    void Update() {
         move = 0;
 
@@ -70,6 +85,15 @@ public class PlayerController : MonoBehaviour {
                 sr.color = c;
                 Debug.Log("Player1 pasó a modo fantasma");
             }
+            if (ghostMode) {
+                ghostSlider.value -= ghostDrainRateByGhostMode * Time.deltaTime;
+
+                if (ghostSlider.value <= 0f) {
+                    ghostSlider.value = 0f;
+                    ExitGhostMode();
+                    Debug.Log("Player1 salió del modo fantasma automáticamente");
+                }
+            }
 
         } else {
             // Player2: flechas
@@ -85,12 +109,7 @@ public class PlayerController : MonoBehaviour {
 
                 if (p1 != null) {
                     PlayerController pc = p1.GetComponent<PlayerController>();
-
-                    pc.ghostMode = false;
-                    p1.layer = LayerMask.NameToLayer("Player1");
-                    Color c = pc.sr.color;
-                    c = new Color(1f, 1f, 1f, 1f); // Restaura la opacidad de Player 1
-                    pc.sr.color = c;
+                    pc.ExitGhostMode();
                     Debug.Log("Player2 devolvió a Player1 a modo normal");
                 }
             }
@@ -108,6 +127,11 @@ public class PlayerController : MonoBehaviour {
         animator.SetBool("isGrounded", isGrounded);
     }
 
+    public void ExitGhostMode() {
+        ghostMode = false;
+        gameObject.layer = LayerMask.NameToLayer("Player1");
+        sr.color = new Color(1f, 1f, 1f, 1f); // vuelve a opacidad normal
+    }
     private void FixedUpdate() {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
     }
