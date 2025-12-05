@@ -25,6 +25,10 @@ public class PlayerController : MonoBehaviour {
 
     public Slider ghostSlider;
     public float ghostDrainRateByGhostMode = 5f;
+    public Transform bolaSpawnPoint; 
+    public GameObject bolaDeLuzPrefab;     
+    public float bolaSpeed = 10f;          
+
 
     void Start() {
         rb2D = GetComponent<Rigidbody2D>();
@@ -90,8 +94,12 @@ public class PlayerController : MonoBehaviour {
                 ghostSlider.value -= ghostDrainRateByGhostMode * Time.deltaTime;
                 if (ghostSlider.value <= 0f) {
                     ghostSlider.value = 0f;
+                    ghostSlider.fillRect.gameObject.SetActive(false);
                     ExitGhostMode();
                     Debug.Log("Player1 salió del modo fantasma automáticamente");
+                } else
+                {
+                    ghostSlider.fillRect.gameObject.SetActive(true);
                 }
             }
             if (Input.GetKeyDown(KeyCode.S)) {
@@ -148,6 +156,10 @@ public class PlayerController : MonoBehaviour {
                     Debug.Log("Player2 devolvió a Player1 a modo normal");
                 }
             }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                LanzarBolaDeLuz();
+            }
         }
 
         rb2D.linearVelocity = new Vector2(move * speed, rb2D.linearVelocity.y);
@@ -190,4 +202,24 @@ public class PlayerController : MonoBehaviour {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
+
+    void LanzarBolaDeLuz()
+    {
+        if (bolaDeLuzPrefab == null || bolaSpawnPoint == null) return;
+
+        // Instanciar la bola en el spawn point
+        GameObject bola = Instantiate(bolaDeLuzPrefab, bolaSpawnPoint.position, Quaternion.identity);
+        bola.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+
+        Rigidbody2D rb = bola.GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            // Dirección según hacia donde mira el personaje
+            float direccion = transform.localScale.x > 0 ? 1f : -1f;
+            rb.linearVelocity = new Vector2(direccion * bolaSpeed, 0f);
+        }
+
+        Destroy(bola, 3f); // se destruye tras 3 segundos
+    }
+
 }

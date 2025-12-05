@@ -1231,6 +1231,14 @@ MonoBehaviour:
   fuegoFatuoClip: {fileID: 0}
   ghostSlider: {fileID: 0}
   ghostDrainRateByGhostMode: 5
+  bolaSpawnPoint: {fileID: 1913321980}
+  bolaDeLuzPrefab: {fileID: 7562768227737809341, guid: a99c0b3e9303f2e41a8faebbdca32e52, type: 3}
+  bolaSpeed: 10
+--- !u!4 &1027358854 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2179385921919227336, guid: 703ba5c895ec313458cd82061cec4bbd, type: 3}
+  m_PrefabInstance: {fileID: 6442529450735437539}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1123478782 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5351566994530312869, guid: 703ba5c895ec313458cd82061cec4bbd, type: 3}
@@ -1276,8 +1284,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 06653d570d4646440a8a81a874f8a6eb, type: 2}
+  m_sharedMaterial: {fileID: -3235721326373274109, guid: 06653d570d4646440a8a81a874f8a6eb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1630,6 +1638,9 @@ MonoBehaviour:
   fuegoFatuoClip: {fileID: 0}
   ghostSlider: {fileID: 0}
   ghostDrainRateByGhostMode: 5
+  bolaSpawnPoint: {fileID: 0}
+  bolaDeLuzPrefab: {fileID: 0}
+  bolaSpeed: 10
 --- !u!1 &1336563021
 GameObject:
   m_ObjectHideFlags: 0
@@ -3428,7 +3439,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: -191117680312646852, guid: 11c89a9cb2729524880d16f00f390438, type: 3}
-  m_Type: 0
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3665,6 +3676,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5739102158937253537, guid: 9c92f2faa8981ed48b8536ba3c91dbbb, type: 3}
   m_PrefabInstance: {fileID: 1608119553488066490}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1913321979
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1913321980}
+  m_Layer: 7
+  m_Name: bolaSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1913321980
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913321979}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1, y: -0.11, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1027358854}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2030263426
 GameObject:
   m_ObjectHideFlags: 0
@@ -5343,7 +5385,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2179385921919227336, guid: 703ba5c895ec313458cd82061cec4bbd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1913321980}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2471851997175690829, guid: 703ba5c895ec313458cd82061cec4bbd, type: 3}
       insertIndex: -1
