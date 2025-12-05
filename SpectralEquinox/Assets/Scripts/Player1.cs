@@ -19,11 +19,13 @@ public class PlayerController : MonoBehaviour {
     private bool isPlayer1;
     private float playerScale;
     private bool ghostMode = false; 
+    private SpriteRenderer sr;
 
     void Start() {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        
+        sr = GetComponent<SpriteRenderer>();
+
         if (gameObject.CompareTag("Player1")) {
             isPlayer1 = true;
             playerScale = 0.25f;
@@ -63,6 +65,9 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Q) && ghostMode == false) {
                 ghostMode = true;
                 gameObject.layer = LayerMask.NameToLayer("Ghost");
+                Color c = sr.color;
+                c = new Color(0.85f, 0.85f, 0.85f, 0.55f); // Baja la opacidad
+                sr.color = c;
                 Debug.Log("Player1 pasó a modo fantasma");
             }
 
@@ -83,6 +88,9 @@ public class PlayerController : MonoBehaviour {
 
                     pc.ghostMode = false;
                     p1.layer = LayerMask.NameToLayer("Player1");
+                    Color c = pc.sr.color;
+                    c = new Color(1f, 1f, 1f, 1f); // Restaura la opacidad de Player 1
+                    pc.sr.color = c;
                     Debug.Log("Player2 devolvió a Player1 a modo normal");
                 }
             }
