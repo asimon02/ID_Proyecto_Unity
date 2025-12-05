@@ -2,6 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class PlayerController : MonoBehaviour {
     public float speed = 3f;
@@ -76,7 +77,7 @@ public class PlayerController : MonoBehaviour {
                 rb2D.linearVelocity = new Vector2(rb2D.linearVelocity.x, jumpForce);
             }
 
-            // Player1 solo puede activar el modo fantasma, pero no desactivarlo
+            // Player1 solo puede activar el modo fantasma (Q), pero no desactivarlo
             if (Input.GetKeyDown(KeyCode.Q) && ghostMode == false) {
                 ghostMode = true;
                 gameObject.layer = LayerMask.NameToLayer("Ghost");
@@ -87,14 +88,48 @@ public class PlayerController : MonoBehaviour {
             }
             if (ghostMode) {
                 ghostSlider.value -= ghostDrainRateByGhostMode * Time.deltaTime;
-
                 if (ghostSlider.value <= 0f) {
                     ghostSlider.value = 0f;
                     ExitGhostMode();
                     Debug.Log("Player1 salió del modo fantasma automáticamente");
                 }
             }
+            if (Input.GetKeyDown(KeyCode.S)) {
+                float checkRadius = 1.5f; // radio de detección
+                Collider2D[] graves = Physics2D.OverlapCircleAll(transform.position, checkRadius);
 
+                Debug.Log("Detectadas " + graves.Length + " colisiones cerca del jugador.");
+
+                // Filtrar solo las que tengan tag "Grave"
+                List<Transform> nearbyGraves = new List<Transform>();
+                foreach (var g in graves) {
+                    if (g.CompareTag("Grave")) {
+                        nearbyGraves.Add(g.transform);
+                        Debug.Log("Tumba cercana encontrada: " + g.name);
+                    }
+                }
+
+                if (nearbyGraves.Count == 0) {
+                    Debug.Log("No hay tumbas cercanas para usar.");
+                    return; // salir si no hay tumbas cerca
+                }
+
+                // Elegir otra tumba aleatoria distinta de la actual
+                Transform currentGrave = nearbyGraves[0]; // la más cercana
+                List<Transform> otherGraves = new List<Transform>();
+                foreach (var g in GameObject.FindGameObjectsWithTag("Grave")) {
+                    if (g.transform != currentGrave) otherGraves.Add(g.transform);
+                }
+
+                if (otherGraves.Count == 0) {
+                    Debug.Log("No hay otras tumbas para teletransportarse.");
+                    return; // salir si no hay otra tumba
+                }
+
+                Transform targetGrave = otherGraves[Random.Range(0, otherGraves.Count)];
+                transform.position = targetGrave.position;
+                Debug.Log("Player1 se teletransportó a: " + targetGrave.name + " en posición " + targetGrave.position);
+            }
         } else {
             // Player2: flechas
             if (Input.GetKey(KeyCode.LeftArrow)) move = -1;
