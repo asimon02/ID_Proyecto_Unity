@@ -297,6 +297,7 @@ public class PlayerController : MonoBehaviour {
         if (ghostSlider != null) {
             if (ghostSlider.value >= 10f){
                 transform.position = targetGrave.position;
+                animator.SetTrigger("muerte_grave_b"); // Animación al reaparecer
             }
             ghostSlider.value -= ghostDrainByAction;
             if (ghostSlider.value <= 0f) {
