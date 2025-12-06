@@ -40,11 +40,11 @@ public class PlayerController : MonoBehaviour {
         if (gameObject.CompareTag("Player1")) {
             isPlayer1 = true;
             playerScale = 0.25f;
-            originalLayer = LayerMask.NameToLayer("Player1");
+            originalLayer = gameObject.layer;
         } else if (gameObject.CompareTag("Player2")) {
             isPlayer1 = false;
             playerScale = 0.5f;
-            originalLayer = LayerMask.NameToLayer("Player2");
+            originalLayer = gameObject.layer;
         }
 
         Transform container = GameObject.Find("FuegoContainer")?.transform;
