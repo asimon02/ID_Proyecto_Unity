@@ -1,0 +1,569 @@
+fileFormatVersion: 2
+guid: 097b6c01e29974c4c8085e38c64a84bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3101218232179602132
+    second: muerte_grave00024_0
+  - first:
+      213: -535597580507888980
+    second: muerte_grave00024_1
+  - first:
+      213: 9031331887690142313
+    second: muerte_grave00024_2
+  - first:
+      213: -6636436939778880687
+    second: muerte_grave00024_3
+  - first:
+      213: 8071408113377738234
+    second: muerte_grave00024_4
+  - first:
+      213: 5864670351646605246
+    second: muerte_grave00024_5
+  - first:
+      213: -6039789628891169149
+    second: muerte_grave00024_6
+  - first:
+      213: 4950700264919651005
+    second: muerte_grave00024_7
+  - first:
+      213: -6194336479978366180
+    second: muerte_grave00024_8
+  - first:
+      213: 3361279998171358092
+    second: muerte_grave00024_9
+  - first:
+      213: 2354030163751481354
+    second: muerte_grave00024_10
+  - first:
+      213: 9115602901212347808
+    second: muerte_grave00024_11
+  - first:
+      213: -7842247235440203600
+    second: muerte_grave00024_12
+  - first:
+      213: 5662802829480421754
+    second: muerte_grave00024_13
+  - first:
+      213: -1301396569173846982
+    second: muerte_grave00024_14
+  - first:
+      213: 1940645121916160938
+    second: muerte_grave00024_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: muerte_grave00024_0
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 543
+        width: 34
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d2b70c1d8db90b20800000000000000
+      internalID: 3101218232179602132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_1
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 520
+        width: 48
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca2c44796dc2198f0800000000000000
+      internalID: -535597580507888980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_2
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 547
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 962dd66708cb55d70800000000000000
+      internalID: 9031331887690142313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_3
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 560
+        width: 71
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15b033eb3c3a6e3a0800000000000000
+      internalID: -6636436939778880687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_4
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 476
+        width: 27
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afdf51b3ae6630070800000000000000
+      internalID: 8071408113377738234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_5
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 495
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebf39aacc9e736150800000000000000
+      internalID: 5864670351646605246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_6
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 507
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e7adb255b5e2ca0800000000000000
+      internalID: -6039789628891169149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_7
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 470
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2d7f739ab64b440800000000000000
+      internalID: 4950700264919651005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_8
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 467
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b55ab5acb490aa0800000000000000
+      internalID: -6194336479978366180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_9
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 414
+        width: 33
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8321a9795aa5ae20800000000000000
+      internalID: 3361279998171358092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_10
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 361
+        width: 38
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0036f436f13ba020800000000000000
+      internalID: 2354030163751481354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_11
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 336
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ad3848ca80218e70800000000000000
+      internalID: 9115602901212347808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_12
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 188
+        width: 25
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b82cca70bdba2390800000000000000
+      internalID: -7842247235440203600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_13
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 143
+        width: 30
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a79e14cab21569e40800000000000000
+      internalID: 5662802829480421754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_14
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 95
+        width: 130
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a341b7627b280fde0800000000000000
+      internalID: -1301396569173846982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_15
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 103
+        width: 129
+        height: 228
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aab48e6d47e8eea10800000000000000
+      internalID: 1940645121916160938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_grave00024_16
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 89
+        width: 438
+        height: 551
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 3, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644f468d62b0ab149873fe0be1d75437
+      internalID: 2111174803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0d14d600fde351548a93f4067f895ff2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      muerte_grave00024_0: 3101218232179602132
+      muerte_grave00024_1: -535597580507888980
+      muerte_grave00024_10: 2354030163751481354
+      muerte_grave00024_11: 9115602901212347808
+      muerte_grave00024_12: -7842247235440203600
+      muerte_grave00024_13: 5662802829480421754
+      muerte_grave00024_14: -1301396569173846982
+      muerte_grave00024_15: 1940645121916160938
+      muerte_grave00024_16: 2111174803
+      muerte_grave00024_2: 9031331887690142313
+      muerte_grave00024_3: -6636436939778880687
+      muerte_grave00024_4: 8071408113377738234
+      muerte_grave00024_5: 5864670351646605246
+      muerte_grave00024_6: -6039789628891169149
+      muerte_grave00024_7: 4950700264919651005
+      muerte_grave00024_8: -6194336479978366180
+      muerte_grave00024_9: 3361279998171358092
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

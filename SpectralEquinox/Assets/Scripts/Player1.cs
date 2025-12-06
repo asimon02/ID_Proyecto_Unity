@@ -104,51 +104,8 @@ public class PlayerController : MonoBehaviour {
                     ghostSlider.fillRect.gameObject.SetActive(true);
                 }
             }
-            if (Input.GetKeyDown(KeyCode.S)) {
-                float checkRadius = 1.5f; // radio de detección
-                Collider2D[] graves = Physics2D.OverlapCircleAll(transform.position, checkRadius);
-
-                Debug.Log("Detectadas " + graves.Length + " colisiones cerca del jugador.");
-
-                // Filtrar solo las que tengan tag "Grave"
-                List<Transform> nearbyGraves = new List<Transform>();
-                foreach (var g in graves) {
-                    if (g.CompareTag("Grave")) {
-                        nearbyGraves.Add(g.transform);
-                        Debug.Log("Tumba cercana encontrada: " + g.name);
-                    }
-                }
-
-                if (nearbyGraves.Count == 0) {
-                    Debug.Log("No hay tumbas cercanas para usar.");
-                    return; // salir si no hay tumbas cerca
-                }
-
-                // Elegir otra tumba aleatoria distinta de la actual
-                Transform currentGrave = nearbyGraves[0]; // la más cercana
-                List<Transform> otherGraves = new List<Transform>();
-                foreach (var g in GameObject.FindGameObjectsWithTag("Grave")) {
-                    if (g.transform != currentGrave) otherGraves.Add(g.transform);
-                }
-
-                if (otherGraves.Count == 0) {
-                    Debug.Log("No hay otras tumbas para teletransportarse.");
-                    return; // salir si no hay otra tumba
-                }
-
-                Transform targetGrave = otherGraves[Random.Range(0, otherGraves.Count)];
-                
-                if (ghostSlider != null) {
-                    if (ghostSlider.value >=10f){
-                        transform.position = targetGrave.position;
-                    }
-                    ghostSlider.value -= ghostDrainByAction;
-                    if (ghostSlider.value <= 0f) {
-                        ghostSlider.value = 0f;
-                        ghostSlider.fillRect.gameObject.SetActive(false);
-                    }
-                }
-                Debug.Log("Player1 se teletransportó a: " + targetGrave.name + " en posición " + targetGrave.position);
+            if (Input.GetKeyDown(KeyCode.S) && !isTransforming) {
+                StartCoroutine(TeleportRoutine());
             }
         } else {
             // Player2: flechas
@@ -169,18 +126,12 @@ public class PlayerController : MonoBehaviour {
                     Debug.Log("Player2 devolvió a Player1 a modo normal");
                 }
             }
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return) && !isTransforming)
             {
-                if (ghostSlider != null) {
-                    if(ghostSlider.value >= 10f) {
-                        LanzarBolaDeLuz();
-                    }
-                    ghostSlider.value -= ghostDrainByAction;
-                    if (ghostSlider.value <= 0f)
-                    {
-                        ghostSlider.value = 0f;
-                        ghostSlider.fillRect.gameObject.SetActive(false);
-                    } 
+                if (ghostSlider != null && ghostSlider.value >= 10f) {
+                    StartCoroutine(FireballRoutine());
+                } else {
+                    Debug.Log("No hay suficiente energía para lanzar fuego.");
                 }
             }
         }
@@ -307,5 +258,73 @@ public class PlayerController : MonoBehaviour {
         
         isTransforming = false;
         Debug.Log("Player1 pasó a modo fantasma tras delay");
+    }
+
+    private System.Collections.IEnumerator TeleportRoutine() {
+        // --- 1. Validación (sin delay) ---
+        float checkRadius = 1.5f; 
+        Collider2D[] graves = Physics2D.OverlapCircleAll(transform.position, checkRadius);
+        List<Transform> nearbyGraves = new List<Transform>();
+
+        foreach (var g in graves) {
+            if (g.CompareTag("Grave")) nearbyGraves.Add(g.transform);
+        }
+
+        if (nearbyGraves.Count == 0) {
+            Debug.Log("No hay tumbas cercanas.");
+            yield break;
+        }
+
+        Transform currentGrave = nearbyGraves[0];
+        List<Transform> otherGraves = new List<Transform>();
+        foreach (var g in GameObject.FindGameObjectsWithTag("Grave")) {
+            if (g.transform != currentGrave) otherGraves.Add(g.transform);
+        }
+
+        if (otherGraves.Count == 0) {
+            Debug.Log("No hay otras tumbas.");
+            yield break;
+        }
+
+        // --- 2. Animación y Espera ---
+        isTransforming = true;
+        animator.SetTrigger("muerte_grave"); // Animación de tumba
+        yield return new WaitForSeconds(1f);
+
+        // --- 3. Teletransporte (tras 1s) ---
+        Transform targetGrave = otherGraves[Random.Range(0, otherGraves.Count)];
+        
+        if (ghostSlider != null) {
+            if (ghostSlider.value >= 10f){
+                transform.position = targetGrave.position;
+            }
+            ghostSlider.value -= ghostDrainByAction;
+            if (ghostSlider.value <= 0f) {
+                ghostSlider.value = 0f;
+                ghostSlider.fillRect.gameObject.SetActive(false);
+            }
+        }
+        Debug.Log("Player1 se teletransportó a: " + targetGrave.name);
+        
+        isTransforming = false;
+    }
+
+    private System.Collections.IEnumerator FireballRoutine() {
+        isTransforming = true;
+        animator.SetTrigger("vida_fire");
+        
+        yield return new WaitForSeconds(1f);
+
+        if (ghostSlider != null) {
+             LanzarBolaDeLuz();
+             ghostSlider.value -= ghostDrainByAction;
+             if (ghostSlider.value <= 0f)
+             {
+                 ghostSlider.value = 0f;
+                 ghostSlider.fillRect.gameObject.SetActive(false);
+             } 
+        }
+
+        isTransforming = false;
     }
 }
