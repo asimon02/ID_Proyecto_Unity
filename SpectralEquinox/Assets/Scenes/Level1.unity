@@ -1234,6 +1234,7 @@ MonoBehaviour:
   bolaSpawnPoint: {fileID: 1913321980}
   bolaDeLuzPrefab: {fileID: 7562768227737809341, guid: a99c0b3e9303f2e41a8faebbdca32e52, type: 3}
   bolaSpeed: 10
+  ghostDrainByAction: 10
 --- !u!4 &1027358854 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2179385921919227336, guid: 703ba5c895ec313458cd82061cec4bbd, type: 3}
@@ -1641,6 +1642,7 @@ MonoBehaviour:
   bolaSpawnPoint: {fileID: 0}
   bolaDeLuzPrefab: {fileID: 0}
   bolaSpeed: 10
+  ghostDrainByAction: 10
 --- !u!1 &1336563021
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,6 +1733,8 @@ GameObject:
   - component: {fileID: 1362251485}
   - component: {fileID: 1362251484}
   - component: {fileID: 1362251483}
+  - component: {fileID: 1362251486}
+  - component: {fileID: 1362251487}
   m_Layer: 0
   m_Name: Palanca
   m_TagString: Untagged
@@ -1833,6 +1837,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1362251486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362251482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 201dfc498cf10b2438855dc6f3017b9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PalancaController
+  interactionKey: 107
+  playerTag: Player
+  puerta: {fileID: 1727340300}
+--- !u!61 &1362251487
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362251482}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.7761724, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.64, y: 5.24}
+    newSize: {x: 3.64, y: 5.14}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 11.653437, y: 5.24}
+  m_EdgeRadius: 0
 --- !u!1 &1419004975
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,6 +3532,7 @@ GameObject:
   - component: {fileID: 1727340299}
   - component: {fileID: 1727340298}
   - component: {fileID: 1727340297}
+  - component: {fileID: 1727340300}
   m_Layer: 0
   m_Name: Puerta
   m_TagString: Untagged
@@ -3569,6 +3635,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1727340300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1727340296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2a8d8fd0db2508419d459527a563acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuertaController
 --- !u!1 &1747618783 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 914038118995374849, guid: 1c44be90ebba24b4db926ef1bda36e4d, type: 3}
@@ -5317,11 +5395,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2179385921919227336, guid: 703ba5c895ec313458cd82061cec4bbd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.87
+      value: 6.35
       objectReference: {fileID: 0}
     - target: {fileID: 2179385921919227336, guid: 703ba5c895ec313458cd82061cec4bbd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.837
+      value: -1.82
       objectReference: {fileID: 0}
     - target: {fileID: 2179385921919227336, guid: 703ba5c895ec313458cd82061cec4bbd, type: 3}
       propertyPath: m_LocalPosition.z
