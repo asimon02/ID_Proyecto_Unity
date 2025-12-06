@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour {
     private float playerScale;
     private bool ghostMode = false; 
     private SpriteRenderer sr;
+    private int originalLayer;
 
     public Slider ghostSlider;
     public float ghostDrainRateByGhostMode = 5f;
@@ -38,9 +39,11 @@ public class PlayerController : MonoBehaviour {
         if (gameObject.CompareTag("Player1")) {
             isPlayer1 = true;
             playerScale = 0.25f;
+            originalLayer = LayerMask.NameToLayer("Player1");
         } else if (gameObject.CompareTag("Player2")) {
             isPlayer1 = false;
             playerScale = 0.5f;
+            originalLayer = LayerMask.NameToLayer("Player2");
         }
 
         Transform container = GameObject.Find("FuegoContainer")?.transform;
@@ -68,6 +71,9 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
+
+        // Evitar colisiones entre jugadores usando IgnoreCollision
+        SetupPlayerCollisionIgnore();
     }
    void Update() {
         move = 0;
@@ -84,7 +90,7 @@ public class PlayerController : MonoBehaviour {
             // Player1 solo puede activar el modo fantasma (Q), pero no desactivarlo
             if (Input.GetKeyDown(KeyCode.Q) && ghostMode == false) {
                 ghostMode = true;
-                gameObject.layer = LayerMask.NameToLayer("Ghost");
+                SetLayerRecursively(gameObject, LayerMask.NameToLayer("Ghost"));
                 Color c = sr.color;
                 c = new Color(0.85f, 0.85f, 0.85f, 0.55f); // Baja la opacidad
                 sr.color = c;
@@ -196,8 +202,42 @@ public class PlayerController : MonoBehaviour {
 
     public void ExitGhostMode() {
         ghostMode = false;
-        gameObject.layer = LayerMask.NameToLayer("Player1");
+        SetLayerRecursively(gameObject, originalLayer);
         sr.color = new Color(1f, 1f, 1f, 1f); // vuelve a opacidad normal
+    }
+
+    private void SetLayerRecursively(GameObject obj, int layer) {
+        if (obj == null) return;
+        obj.layer = layer;
+        foreach (Transform child in obj.transform) {
+            SetLayerRecursively(child.gameObject, layer);
+        }
+    }
+
+    private void SetupPlayerCollisionIgnore() {
+        // Obtener todos los colliders de este jugador
+        Collider2D[] myColliders = GetComponentsInChildren<Collider2D>();
+        
+        // Buscar el otro jugador
+        GameObject otherPlayer = null;
+        if (isPlayer1) {
+            otherPlayer = GameObject.FindGameObjectWithTag("Player2");
+        } else {
+            otherPlayer = GameObject.FindGameObjectWithTag("Player1");
+        }
+        
+        if (otherPlayer != null) {
+            // Obtener todos los colliders del otro jugador
+            Collider2D[] otherColliders = otherPlayer.GetComponentsInChildren<Collider2D>();
+            
+            // Ignorar colisiones entre todos los pares de colliders
+            foreach (Collider2D myCol in myColliders) {
+                foreach (Collider2D otherCol in otherColliders) {
+                    Physics2D.IgnoreCollision(myCol, otherCol, true);
+                    Debug.Log($"Ignorando colisión entre {myCol.name} y {otherCol.name}");
+                }
+            }
+        }
     }
     private void FixedUpdate() {
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer);
