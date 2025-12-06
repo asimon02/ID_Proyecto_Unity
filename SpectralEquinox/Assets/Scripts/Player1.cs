@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour {
     private bool ghostMode = false; 
     private SpriteRenderer sr;
     private int originalLayer;
+    private bool isTransforming = false;
 
     public Slider ghostSlider;
     public float ghostDrainRateByGhostMode = 5f;
@@ -88,13 +89,8 @@ public class PlayerController : MonoBehaviour {
             }
 
             // Player1 solo puede activar el modo fantasma (Q), pero no desactivarlo
-            if (Input.GetKeyDown(KeyCode.Q) && ghostMode == false) {
-                ghostMode = true;
-                SetLayerRecursively(gameObject, LayerMask.NameToLayer("Ghost"));
-                Color c = sr.color;
-                c = new Color(0.85f, 0.85f, 0.85f, 0.55f); // Baja la opacidad
-                sr.color = c;
-                Debug.Log("Player1 pasó a modo fantasma");
+            if (Input.GetKeyDown(KeyCode.Q) && ghostMode == false && isTransforming == false) {
+                StartCoroutine(EnterGhostModeRoutine());
             }
             if (ghostMode) {
                 ghostSlider.value -= ghostDrainRateByGhostMode * Time.deltaTime;
@@ -164,6 +160,7 @@ public class PlayerController : MonoBehaviour {
             }
             // Player2 puede devolver a Player1 a modo normal
             if (Input.GetKeyDown(KeyCode.P) && ghostMode == false) {
+                animator.SetTrigger("vida_live"); // Player2 hace la animación de revivir
                 GameObject p1 = GameObject.FindGameObjectWithTag("Player1");
 
                 if (p1 != null) {
@@ -201,9 +198,20 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void ExitGhostMode() {
+        if (isTransforming) return;
+        StartCoroutine(ExitGhostModeRoutine());
+    }
+
+    private System.Collections.IEnumerator ExitGhostModeRoutine() {
+        isTransforming = true;
+        // Esperar 1 segundo
+        yield return new WaitForSeconds(1f);
+
         ghostMode = false;
         SetLayerRecursively(gameObject, originalLayer);
         sr.color = new Color(1f, 1f, 1f, 1f); // vuelve a opacidad normal
+        isTransforming = false;
+        Debug.Log("Player1 volvió a modo normal tras delay");
     }
 
     private void SetLayerRecursively(GameObject obj, int layer) {
@@ -282,4 +290,22 @@ public class PlayerController : MonoBehaviour {
         Destroy(bola, 3f); // se destruye tras 3 segundos
     }
 
+
+    private System.Collections.IEnumerator EnterGhostModeRoutine() {
+        isTransforming = true;
+        animator.SetTrigger("muerte_die"); // Activar animación inmediatamente
+        
+        // Esperar 1 segundo mientras corre la animación
+        yield return new WaitForSeconds(1f);
+
+        // Activación real del modo fantasma
+        ghostMode = true;
+        SetLayerRecursively(gameObject, LayerMask.NameToLayer("Ghost"));
+        Color c = sr.color;
+        c = new Color(0.85f, 0.85f, 0.85f, 0.55f); // Baja la opacidad
+        sr.color = c;
+        
+        isTransforming = false;
+        Debug.Log("Player1 pasó a modo fantasma tras delay");
+    }
 }
