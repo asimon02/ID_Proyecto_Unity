@@ -36,6 +36,10 @@ public class Player2 : MonoBehaviour {
         }
         
         fuegosActuales = 0;
+
+        // Asegurar que el jugador esté por delante de la UI
+        SpriteRenderer sr = GetComponent<SpriteRenderer>();
+        if(sr != null) sr.sortingOrder = 10;
     }
 
     void Update() {

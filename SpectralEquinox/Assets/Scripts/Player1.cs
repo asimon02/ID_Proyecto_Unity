@@ -54,6 +54,18 @@ public class PlayerController : MonoBehaviour {
             return;
         }
 
+        // Configurar Canvas para estar detrás de los personajes pero delante del fondo
+        Canvas canvas = container.GetComponent<Canvas>();
+        if (canvas == null) canvas = container.GetComponentInParent<Canvas>();
+        
+        if (canvas != null && Camera.main != null) {
+            canvas.renderMode = RenderMode.ScreenSpaceCamera;
+            canvas.worldCamera = Camera.main;
+            canvas.planeDistance = 10f; 
+            canvas.sortingOrder = 5; // UI layer
+            Debug.Log("Canvas configurado a ScreenSpaceCamera con orden 5.");
+        }
+
         if (ghostSlider == null) {
             ghostSlider = container.Find("GhostSlider")?.GetComponent<Slider>();
             if (ghostSlider == null)
@@ -72,6 +84,9 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
+
+        // Asegurar que el jugador esté por delante de la UI
+        if(sr != null) sr.sortingOrder = 10;
 
         // Evitar colisiones entre jugadores usando IgnoreCollision
         SetupPlayerCollisionIgnore();
