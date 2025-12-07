@@ -34,6 +34,8 @@ public class Player2 : MonoBehaviour {
             }
             else Debug.LogError("No se encontró 'FuegoContainer' en la escena.");
         }
+        
+        fuegosActuales = 0;
     }
 
     void Update() {

@@ -75,6 +75,8 @@ public class PlayerController : MonoBehaviour {
 
         // Evitar colisiones entre jugadores usando IgnoreCollision
         SetupPlayerCollisionIgnore();
+        
+        fuegosActuales = 0;
     }
    void Update() {
         move = 0;
