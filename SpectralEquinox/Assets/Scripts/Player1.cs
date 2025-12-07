@@ -242,6 +242,10 @@ public class PlayerController : MonoBehaviour {
     }
 
 
+    public bool IsInGhostMode() {
+        return ghostMode;
+    }
+
     private System.Collections.IEnumerator EnterGhostModeRoutine() {
         isTransforming = true;
         animator.SetTrigger("muerte_die"); // Activar animación inmediatamente
