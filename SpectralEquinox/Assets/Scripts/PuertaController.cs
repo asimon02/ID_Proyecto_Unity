@@ -15,15 +15,37 @@ public class PuertaController : MonoBehaviour
     private const string OPEN_STATE = "Open";
     private const string CLOSE_STATE = "Close";
 
+    [SerializeField] private GameObject summaryUIPanel;
+    private LevelSummaryUI summaryUI;
+
     void Start()
+{
+    animator = GetComponent<Animator>();
+    if (animator == null)
     {
-        animator = GetComponent<Animator>();
-        
-        if (animator == null)
+        Debug.LogError("No se encontró Animator en la Puerta. Asegúrate de que tiene un Animator Component.");
+    }
+
+    if (summaryUIPanel != null)
+    {
+        // Busca el LevelSummaryUI en el mismo objeto o en sus hijos
+        summaryUI = summaryUIPanel.GetComponent<LevelSummaryUI>();
+        if (summaryUI == null)
         {
-            Debug.LogError("No se encontró Animator en la Puerta. Asegúrate de que tiene un Animator Component.");
+            summaryUI = summaryUIPanel.GetComponentInChildren<LevelSummaryUI>();
+        }
+
+        if (summaryUI == null)
+        {
+            Debug.LogError("No se encontró LevelSummaryUI en summaryUIPanel ni en sus hijos!");
         }
     }
+    else
+    {
+        Debug.LogError("No has asignado summaryUIPanel en el Inspector!");
+    }
+}
+
 
     // Método para abrir la puerta
     public void OpenDoor()
@@ -111,14 +133,12 @@ public class PuertaController : MonoBehaviour
     private IEnumerator ResetSequence()
     {
         isResetting = true;
-        
-        // Initial delay before fade starts
+
         yield return new WaitForSeconds(1f);
-        
+
         float fadeDuration = 1f;
         float elapsedTime = 0f;
 
-        // Get sprite renderers
         List<SpriteRenderer> renderers = new List<SpriteRenderer>();
         foreach (GameObject player in playersInDoor)
         {
@@ -129,12 +149,11 @@ public class PuertaController : MonoBehaviour
             }
         }
 
-        // Fade out loop
+        // Fade out de los jugadores
         while (elapsedTime < fadeDuration)
         {
             elapsedTime += Time.deltaTime;
             float alpha = Mathf.Lerp(1f, 0f, elapsedTime / fadeDuration);
-
             foreach (var sr in renderers)
             {
                 if (sr != null)
@@ -147,7 +166,7 @@ public class PuertaController : MonoBehaviour
             yield return null;
         }
 
-        // Ensure completely transparent
+        // Asegurarse que sean completamente transparentes
         foreach (var sr in renderers)
         {
             if (sr != null)
@@ -158,10 +177,34 @@ public class PuertaController : MonoBehaviour
             }
         }
 
-        // Optional extra delay after fade
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
 
-        // Restart
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        // --- Mostrar ventana de resumen ---
+        float tiempo = Time.timeSinceLevelLoad;  // Tiempo del nivel
+        int fuegos = PlayerController.GetCollectedFires();
+        int bolas = PlayerController.GetBolasLanzadas(); // Método que debes añadir en PlayerController
+
+        summaryUI.ShowSummary(tiempo, fuegos, bolas);
+
+        // Esperar a que el jugador pulse continuar
+        while (summaryUI.gameObject.activeSelf)
+            yield return null;
+
+        int levelIndex = GetLevelIndex(SceneManager.GetActiveScene().name);
+        GameManager.Instance.SaveLevelProgress(levelIndex, fuegos);
+
+        SceneManager.LoadScene("Selector");
     }
+
+
+    private int GetLevelIndex(string sceneName)
+    {
+        if (sceneName.StartsWith("Level"))
+        {
+            // "Level1" → 0, "Level2" → 1, etc.
+            return int.Parse(sceneName.Replace("Level", "")) - 1;
+        }
+        return 0;
+    }
+
 }

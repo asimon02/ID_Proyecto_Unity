@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour {
     public GameObject bolaDeLuzPrefab;     
     public float bolaSpeed = 10f;          
     public float ghostDrainByAction = 10f;
-
+    private static int bolasLanzadas = 0;
     void Start() {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -257,6 +257,7 @@ public class PlayerController : MonoBehaviour {
         }
 
         Destroy(bola, 3f); // se destruye tras 3 segundos
+        bolasLanzadas++;
     }
 
 
@@ -349,5 +350,15 @@ public class PlayerController : MonoBehaviour {
         }
 
         isTransforming = false;
+    }
+
+    public static int GetCollectedFires()
+    {
+        return fuegosActuales;
+    }
+
+    public static int GetBolasLanzadas()
+    {
+        return bolasLanzadas;
     }
 }
