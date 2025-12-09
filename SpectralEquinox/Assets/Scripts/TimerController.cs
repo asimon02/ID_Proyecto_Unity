@@ -29,6 +29,12 @@ public class TimerController : MonoBehaviour
         isRunning = false;
     }
 
+    public void ResumeTimer()
+    {
+        isRunning = true;
+    }
+
+
     public void ResetTimer()
     {
         elapsedTime = 0f;

@@ -38,6 +38,10 @@ public class MenuTransitions : MonoBehaviour
         SceneManager.LoadScene("Selector");
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 
     public void OpenOptions()
     {

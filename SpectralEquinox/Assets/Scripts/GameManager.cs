@@ -58,4 +58,8 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.DeleteAll();
         PlayerPrefs.Save();
     }
+
+    public void LoadMainMenu(){
+        SceneManager.LoadScene("MenuInicial");
+    }
 }

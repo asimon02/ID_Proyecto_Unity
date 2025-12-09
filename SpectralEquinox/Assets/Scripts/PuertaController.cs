@@ -178,6 +178,11 @@ public class PuertaController : MonoBehaviour
         }
 
         yield return new WaitForSeconds(0.5f);
+        
+        TimerController timer = TimerController.FindFirstObjectByType<TimerController>();
+        if (timer != null)
+            timer.PauseTimer();
+
 
         // --- Mostrar ventana de resumen ---
         float tiempo = Time.timeSinceLevelLoad;  // Tiempo del nivel
