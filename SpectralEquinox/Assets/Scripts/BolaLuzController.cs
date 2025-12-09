@@ -9,12 +9,12 @@ public class BolaLuzController : MonoBehaviour
         
         if (obstacle != null)
         {
-            Debug.Log("Bola de luz golpeó el obstáculo de energía. Destruyendo ambos.");
+            Debug.Log("Bola de luz golpeó el obstáculo de energía. Iniciando explosión.");
             
-            // Destruir el obstáculo (la EnergyBall)
-            Destroy(obstacle.gameObject);
+            // Llamar al método de explosión del obstáculo para activar la animación
+            obstacle.Explode();
             
-            // Destruir la bola de luz (este proyectil)
+            // Destruir la bola de luz (este proyectil) inmediatamente
             Destroy(this.gameObject);
         }
         // 2. Opcional: Destruirse si choca con paredes (Layer "Ground" o "Wall")
