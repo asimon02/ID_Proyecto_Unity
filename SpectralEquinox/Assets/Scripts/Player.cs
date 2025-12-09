@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour {
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        bolasLanzadas = 0;
 
         if (gameObject.CompareTag("Player1")) {
             isPlayer1 = true;
@@ -93,7 +94,7 @@ public class PlayerController : MonoBehaviour {
         
         fuegosActuales = 0;
     }
-   void Update() {
+    void Update() {
         move = 0;
 
         if (isPlayer1) {
@@ -340,13 +341,12 @@ public class PlayerController : MonoBehaviour {
         yield return new WaitForSeconds(1f);
 
         if (ghostSlider != null) {
-             LanzarBolaDeLuz();
-             ghostSlider.value -= ghostDrainByAction;
-             if (ghostSlider.value <= 0f)
-             {
-                 ghostSlider.value = 0f;
-                 ghostSlider.fillRect.gameObject.SetActive(false);
-             } 
+            LanzarBolaDeLuz();
+            ghostSlider.value -= ghostDrainByAction;
+            if (ghostSlider.value <= 0f){
+                ghostSlider.value = 0f;
+                ghostSlider.fillRect.gameObject.SetActive(false);
+            } 
         }
 
         isTransforming = false;

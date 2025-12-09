@@ -900,7 +900,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: e5ab4f694cc95634e80ae9eda353c57e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1956,7 +1956,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Feugos fautos conseguidos:'
+  m_text: 'Fuegos fatuos conseguidos:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 06653d570d4646440a8a81a874f8a6eb, type: 2}
   m_sharedMaterial: {fileID: -3235721326373274109, guid: 06653d570d4646440a8a81a874f8a6eb, type: 2}
@@ -3063,7 +3063,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: e5ab4f694cc95634e80ae9eda353c57e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -4837,7 +4837,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: e5ab4f694cc95634e80ae9eda353c57e, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
