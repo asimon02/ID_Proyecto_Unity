@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: 33396564ee7f9184ca89fb065ba21f81
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2873274677323412417
+    second: muerte_die000_00014_0
+  - first:
+      213: -6194693511724822922
+    second: muerte_die000_00014_1
+  - first:
+      213: 7229154413807383586
+    second: muerte_die000_00014_2
+  - first:
+      213: 4533070018757036502
+    second: muerte_die000_00014_3
+  - first:
+      213: -103281731013487891
+    second: muerte_die000_00014_4
+  - first:
+      213: -7095877869302002402
+    second: muerte_die000_00014_5
+  - first:
+      213: 2889240052933407730
+    second: muerte_die000_00014_6
+  - first:
+      213: -378557807379430723
+    second: muerte_die000_00014_7
+  - first:
+      213: -8953319246369288627
+    second: muerte_die000_00014_8
+  - first:
+      213: -7762091604923093710
+    second: muerte_die000_00014_9
+  - first:
+      213: -8587918840231611898
+    second: muerte_die000_00014_10
+  - first:
+      213: -9106044499657978150
+    second: muerte_die000_00014_11
+  - first:
+      213: -302340169978977522
+    second: muerte_die000_00014_12
+  - first:
+      213: -944244489374601989
+    second: muerte_die000_00014_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: muerte_die000_00014_0
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 561
+        width: 62
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c430c77e31028d0800000000000000
+      internalID: -2873274677323412417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_die000_00014_1
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 527
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67e893d6217080aa0800000000000000
+      internalID: -6194693511724822922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_die000_00014_2
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 429
+        width: 46
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 224bf6d33ad135460800000000000000
+      internalID: 7229154413807383586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_die000_00014_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 6
+        width: 387
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d98cf13a23b8ee30800000000000000
+      internalID: 4533070018757036502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_die000_00014_4
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 368
+        width: 53
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2572710d1119ef0800000000000000
+      internalID: -103281731013487891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_die000_00014_5
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 357
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1dc2b66ca0668d90800000000000000
+      internalID: -7095877869302002402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_die000_00014_6
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 347
+        width: 83
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f33de13584a81820800000000000000
+      internalID: 2889240052933407730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_die000_00014_7
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 322
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2c23c0ea71fbaf0800000000000000
+      internalID: -378557807379430723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_die000_00014_8
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 288
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4e8d77059b6fb380800000000000000
+      internalID: -8953319246369288627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_die000_00014_9
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 273
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23d64868fc2874490800000000000000
+      internalID: -7762091604923093710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_die000_00014_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 270
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6023c18c05591d880800000000000000
+      internalID: -8587918840231611898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_die000_00014_11
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 213
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade8cf006c4d0a180800000000000000
+      internalID: -9106044499657978150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_die000_00014_12
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 198
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e03621f973fddcbf0800000000000000
+      internalID: -302340169978977522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: muerte_die000_00014_13
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 161
+        width: 39
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfce4b5c3ae55e2f0800000000000000
+      internalID: -944244489374601989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      muerte_die000_00014_0: -2873274677323412417
+      muerte_die000_00014_1: -6194693511724822922
+      muerte_die000_00014_10: -8587918840231611898
+      muerte_die000_00014_11: -9106044499657978150
+      muerte_die000_00014_12: -302340169978977522
+      muerte_die000_00014_13: -944244489374601989
+      muerte_die000_00014_2: 7229154413807383586
+      muerte_die000_00014_3: 4533070018757036502
+      muerte_die000_00014_4: -103281731013487891
+      muerte_die000_00014_5: -7095877869302002402
+      muerte_die000_00014_6: 2889240052933407730
+      muerte_die000_00014_7: -378557807379430723
+      muerte_die000_00014_8: -8953319246369288627
+      muerte_die000_00014_9: -7762091604923093710
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
