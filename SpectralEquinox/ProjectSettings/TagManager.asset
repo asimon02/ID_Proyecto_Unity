@@ -2,22 +2,28 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Death
+  - Floor
+  - Player2
+  - Coin
+  - Player1
+  - Grave
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Floor
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Water
+  - UI
+  - Player1
+  - Player2
+  - Ghost
+  - Wall
+  - BolaLuz
   - 
   - 
   - 
@@ -41,3 +47,5 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  m_RenderingLayers:
+  - Default
